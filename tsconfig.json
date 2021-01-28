@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    // "strictNullChecks": true,
+    // "noImplicitAny": true,//strict:trueに含まれる。
+    "target": "es6",
+    "module": "commonjs", //動作環境がサーバサイドの Node.js であれば、ここは commonjs を指定する
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react", //react導入　すぐに変更しない場合はcmd+shift+PでTS serverで再起動
+    "sourceMap": true,
+    "moduleResolution": "Node", //'moduleResolution'と'resolveJsonModule'の設定でjsonファイルを導入できるようにする。
+    "resolveJsonModule": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }] //予測変換可能にしてくれる機能
+  },
+  "include": ["./src/**/*"] //ここで "src" を指定してるのは、ルート直下の src/ ディレクトリにしか TypeScript ファイルが置かれない
+}
