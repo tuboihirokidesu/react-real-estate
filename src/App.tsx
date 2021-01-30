@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Dropdown from './components/Dropdown';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import { sliderData } from './data/SliderData';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
     <div className="app">
       <GlobalStyle />
       <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} reset={reset} />
       <Hero slides={sliderData} isOpen={isOpen} />
     </div>
   );

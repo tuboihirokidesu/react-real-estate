@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Button = styled(Link)<{ primary: boolean; big?: boolean }>`
+export const Button = styled(Link)<{ primary: boolean; big?: boolean; round?: boolean }>`
   background: ${({ primary }) => (primary ? '#000d1a' : '#cd853f')};
   white-space: none;
   border: none;
