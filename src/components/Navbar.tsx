@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 import Bars from '../images/bars.svg';
-import { FaBars } from 'react-icons/fa';
 
 const NavLink = css`
   color: #fff;
